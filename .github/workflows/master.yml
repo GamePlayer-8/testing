@@ -27,5 +27,5 @@ jobs:
           run: |
             apk add --no-cache git bash
             export GIT_PROJECT_NAME="GamePlayer-8.github.io"
-            git ls-remote --exit-code --heads https://$GIT_USERNAME:${{ secrets.GITHUB_TOKEN }}@github.com/$GIT_USERNAME/"$GIT_PROJECT_NAME" gh-pages
+            git ls-remote --exit-code --heads https://"$GIT_USERNAME":"$GIT_TOKEN"@github.com/"$GIT_USERNAME"/"$GIT_PROJECT_NAME" gh-pages
             echo $?
