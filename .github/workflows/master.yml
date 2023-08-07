@@ -26,5 +26,5 @@ jobs:
         - name: testing
           run: |
             apk add --no-cache git bash
-            git ls-remote --exit-code --heads https://GamePlayer-8:${{ secrets.GITHUB_TOKEN }}@github.com/GamePlayer-8/GamePlayer-8.github.io gh-pages
+            git ls-remote --exit-code --heads https://$GIT_USERNAME:${{ secrets.GITHUB_TOKEN }}@github.com/$GIT_USERNAME/GamePlayer-8.github.io gh-pages
             echo $?
