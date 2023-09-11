@@ -1,7 +1,7 @@
 # Bug report
 name: Bug report
 about: Report problems.
-title: '\U0001F41E '
+title: '🐞 '
 labels: ['bug']
 assignees: ['GamePlayer-8']
 body:
@@ -28,16 +28,16 @@ body:
     attributes:
       label: Describe the bug
       description: Describe what's the bug about. Give as much information as possible.
-      placeholder: Description
+      placeholder: Description of your problem.
     validations:
       required: true
   - type: textarea
     id: version
     attributes:
-      label: GitIO Version
+      label: Version
       description: Version of the software, where the bug happened.
       render: shell
-      placeholder: Version info
+      placeholder: Repository commit / version info.
     validations:
       required: true
   - type: textarea
@@ -52,9 +52,8 @@ body:
     id: checkboxes
     attributes:
       label: Validations
-      description: Before submitting the issue, please make sure you do the following
+      description: Before submitting the issue, please make read the repository documentation & check if that issue isn't a duplicate.
       options:
-        - label: Read the [documentation](https://gameplayer-8.codeberg.page/gitio/documentation).
-          required: true
-        - label: Check that there isn't [already an issue](https://codeberg.org/GamePlayer-8/gitio/issues) that reports the same bug to avoid creating a duplicate.
-          required: true
+        - label: I have read the documentation of the repository.
+        - label: I have checked in the issue tracker that my issue isn't a duplicate.
+
